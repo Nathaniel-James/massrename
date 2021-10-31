@@ -6,10 +6,10 @@ MassRename is a command line tool for renaming batches of files. This removes th
 I created the tool for my own personal use so I could quickly rename episodes of TV shows along with the subtitle files.
 
 ## How to install
-Simply download the python file and run it using a Terminal - it will rename files from whatever directory the file is in.
+Simply download the Python file and run it using a terminal - it will rename files from whatever directory the file is in.
 
 ## How to use 
-Simply type "massrename.py" into the terminal and give your arguments. Make sure that massrename.py is in the directoy with the files you want to rename.
+Simply type "massrename.py" into the terminal and give your arguments. Make sure that massrename.py is in the directory with the files you want to rename.
 
 Example:
 ```
