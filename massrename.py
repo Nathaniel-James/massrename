@@ -17,13 +17,13 @@ def output_msg(msg):
 def filter_files(unfiltered_files, check, part):
     """
     Uses a list of filenames and filters them using the arguments processed by argsparse. 
-    Files that don't match the check don't get appened to the filtered list, and an output_msg() is shown.
+    Files that don't match the check don't get append to the filtered list, and an output_msg() is shown.
 
     Parameters:
         unfiltered_files : list
             A list of unfiltered filenames 
         check : str
-            If this string is in a filename, it is appened to filtered
+            If this string is in a filename, it is appended to filtered
         part : int
             Part of the whole filename to check (0=filename, 1=file ext)
 
@@ -58,7 +58,7 @@ def file_sort_key(file):
     The os.listdir() will return... 
     "test1.txt, test10.txt, test2.txt"
     To make %n work, we need it to return the files in a logical/natural form.
-    We use this key to achive that, while also using the sorted() function.
+    We use this key to achieve that, while also using the sorted() function.
 
     Parameters: 
         unsorted_files : list
@@ -139,10 +139,5 @@ files = filter_files(files, args.includes, 0)   # Filtering based on filename
 files = sorted(files, key=file_sort_key)        # Sorting the files into human/natural order
 
 rename_files(args.name, files)
-
-
-###### To do ######
-# {a}             #
-###################
 
 
